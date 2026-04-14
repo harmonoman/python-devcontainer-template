@@ -10,7 +10,7 @@ A minimal, reproducible Python dev container template using [uv](https://github.
 |---|---|
 | `.devcontainer/devcontainer.json` | VS Code container config, extensions, settings |
 | `.devcontainer/Dockerfile` | Python 3.12 slim + uv |
-| `.devcontainer/docker-compose.yml` | Workspace mount, .venv volume, optional services |
+| `.devcontainer/docker-compose.yml` | Workspace mount and .venv volume |
 | `.devcontainer/postCreate.sh` | Runs `uv sync` on first container open |
 | `pyproject.toml` | Project metadata and dependency config |
 | `.python-version` | Pins Python 3.12 for uv |
@@ -55,12 +55,6 @@ uv add --dev pytest ruff
 # Sync after manually editing pyproject.toml
 uv sync
 ```
-
----
-
-## Optional Services
-
-`docker-compose.yml` includes commented-out blocks for **PostgreSQL** and other common services. To enable one, uncomment the service block and add it to `depends_on` in the `app` service.
 
 ---
 
