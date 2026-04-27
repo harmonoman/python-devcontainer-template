@@ -3,7 +3,6 @@
   "dockerComposeFile": "docker-compose.yml",
   "service": "app",
   "workspaceFolder": "/workspace",
-
   "customizations": {
     "vscode": {
       "extensions": [
@@ -17,8 +16,6 @@
       }
     }
   },
-
-  "postCreateCommand": "bash .devcontainer/postCreate.sh",
-
+  "postCreateCommand": "bash /workspace/.devcontainer/postCreate.sh",
   "remoteUser": "vscode"
 }
