@@ -40,6 +40,8 @@ Python 3.12.x
 ✅ Environment ready.
 ```
 
+> **Note:** After the build, the integrated terminal may show `/bin/sh: 1: source: not found`. This is not an error — the terminal defaults to `sh`, which doesn't support `source`. You never need to activate the venv manually; use `uv run` instead.
+
 ### 3. Rename the project
 
 Update the `name` field in `pyproject.toml`:
